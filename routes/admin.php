@@ -17,6 +17,7 @@ Route::group(['prefix' => 'admin'], function () {
         Route::post('/changepassword','Admin\InfoController@changepassword')->name('admin.changepassword');
         #系统配置
         Route::get('/system','Admin\SystemController@index')->name('admin.system');
+        Route::post('/system','Admin\SystemController@save')->name('admin.system.save');
 
     });
 });
