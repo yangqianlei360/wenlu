@@ -24,9 +24,15 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        // $schedule->command('inspire')
-        //          ->hourly();
+        $time= config('backup.time');
+        if($time!=1){
+            $schedule->command('backup:run --only-db')->days($time);
+        }
+        $schedule->command('backup:run --only-db')->daily();
+
     }
+
+
 
     /**
      * Register the Closure based commands for the application.

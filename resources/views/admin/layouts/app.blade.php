@@ -19,8 +19,6 @@
 <script src="{{asset('static/admin/layui/layui.js')}}" type="text/javascript" charset="utf-8"></script>
 <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="{{asset('static/admin/js/common.js')}}" type="text/javascript" charset="utf-8"></script>
-
-
 @yield('js')
 </body>
 </html>

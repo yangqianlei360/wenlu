@@ -167,6 +167,7 @@ return [
          * Package Service Providers...
          */
         Laravel\Tinker\TinkerServiceProvider::class,
+        Spatie\Backup\BackupServiceProvider::class,
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
         'Collective\Html\HtmlServiceProvider',
         Barryvdh\Debugbar\ServiceProvider::class,

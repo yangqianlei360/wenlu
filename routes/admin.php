@@ -18,6 +18,10 @@ Route::group(['prefix' => 'admin'], function () {
         #系统配置
         Route::get('/system','Admin\SystemController@index')->name('admin.system');
         Route::post('/system','Admin\SystemController@save')->name('admin.system.save');
+        # 数据库备份配置
+        Route::get('/backup','Admin\BackupController@index')->name('admin.backup');
+        Route::post('/savebackup','Admin\BackupController@save')->name('admin.backup.save');
+
 
     });
 });

@@ -25,7 +25,7 @@ class LoginController extends Controller
         }
 
         if (! Auth::guard('admin')->attempt(['name' => $name, 'password' => $password])) {
-            return jump('error', '用户名密码不匹配', route('admin.login'));
+            return jump('error', '用户名密码不匹配', route('login'));
         }
 
         return redirect('/admin/home');

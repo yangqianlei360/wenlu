@@ -46,7 +46,7 @@
                 <a href="javascript:;"><i class="iconfont">&#xe60d;</i>生成静态</a>
             </li>
             <li class="layui-nav-item">
-                <a href="javascript:;"><i class="iconfont">&#xe600;</i>备份管理</a>
+                <a href="javascript:;" data-url="{{route('admin.backup')}}" data-id='4' data-text="备份管理"><i class="iconfont">&#xe600;</i>备份管理</a>
             </li>
             <li class="layui-nav-item">
                 <a href="javascript:;" data-url="{{route('admin.info')}}" data-id='5' data-text="个人信息"><i class="iconfont">&#xe606;</i>个人信息</a>
