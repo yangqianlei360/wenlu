@@ -17,11 +17,10 @@
                         <label class="layui-form-label">备份时间：</label>
                         <div class="layui-input-block">
                                 <select name="time">
-                                    <option value=""></option>
-                                    <option value="1" {{Config::get('backup.time')=='daily()'?'selected':''}}>每1天</option>
-                                    <option value="2" {{Config::get('backup.time')=='daily(2)'?'selected':''}}>每2天</option>
-                                    <option value="3" {{Config::get('backup.time')=='daily(3)'?'selected':''}}>每3天</option>
-                                    <option value="4" {{Config::get('backup.time')=='daily(5)'?'selected':''}}>每5天</option>
+                                    <option value="1" {{Config::get('backup.time')==1?'selected':''}}>每1天</option>
+                                    <option value="2" {{Config::get('backup.time')==2?'selected':''}}>每2天</option>
+                                    <option value="3" {{Config::get('backup.time')==3?'selected':''}}>每3天</option>
+                                    <option value="4" {{Config::get('backup.time')==5?'selected':''}}>每5天</option>
                                 </select>
 
                         </div>

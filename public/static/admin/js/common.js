@@ -85,14 +85,48 @@ layui.use(['form', 'jquery', 'laydate', 'layer', 'laypage', 'dialog',   'element
 		dialog.confirm({
 			message:'您确定要进行删除吗？',
 			success:function(){
-				layer.msg('确定了')
-			},
+                $.ajax({
+                    url: url,
+                    type: "post",
+                    data: {'id':id},
+                    success: function(data){
+                       if(data.status){
+                       	window.location.href=window.location.href;
+					   }
+                    }
+                });
+            },
 			cancel:function(){
 				layer.msg('取消了')
 			}
 		})
 		return false;
 	})
+
+    //列表显示隐藏
+    $('#table-list').on('click', '.display-btn', function() {
+        var url=$(this).attr('data-url');
+        var id = $(this).attr('data-id');
+
+
+
+                $.ajax({
+                    url: url,
+                    type: "post",
+                    data: {'id':id},
+                    success: function(data){
+                        if(data.status){
+                            window.location.href=window.location.href;
+                        }
+                    }
+                });
+
+
+        return false;
+    })
+
+
+
 	//列表跳转
 	$('#table-list,.tool-btn').on('click', '.go-btn', function() {
 		var url=$(this).attr('data-url');

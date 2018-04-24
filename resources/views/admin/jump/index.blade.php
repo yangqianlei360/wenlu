@@ -41,7 +41,7 @@
     </p>
     <p class="clearfix">
         <a href="javascript:history.go(-1);" class="btn btn-grey">返回上一步</a>
-        <a href="index/index" class="btn btn-primary">立即跳转</a>
+        <a href="{{ session('status')['url'] }}" class="btn btn-primary">立即跳转</a>
     </p>
 </div>
 <div class="copyright">

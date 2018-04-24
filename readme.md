@@ -20,3 +20,8 @@
  	
  ### 编辑掉定时任务
  	编辑/var/spool/cron/crontabs 可以删除对应的任务
+ 	
+ ### mapbox API文档
+ 	https://www.mapbox.com/mapbox-gl-js/example/set-popup/
+ ### linux 下批量下载文件以及文件夹
+ 	wget -r -p -k -np images.txt

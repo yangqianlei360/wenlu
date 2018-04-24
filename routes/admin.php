@@ -21,6 +21,14 @@ Route::group(['prefix' => 'admin'], function () {
         # 数据库备份配置
         Route::get('/backup','Admin\BackupController@index')->name('admin.backup');
         Route::post('/savebackup','Admin\BackupController@save')->name('admin.backup.save');
+        #新闻分类
+        Route::get('/newscat/add','Admin\NewscatController@add')->name('admin.newscat.add'); #添加
+        Route::post('/newscat','Admin\NewscatController@save')->name('admin.newscat.save'); #保存
+        Route::get('/newscat','Admin\NewscatController@index')->name('admin.newscat.list'); #首页
+        Route::get('/newscat-show/{id}','Admin\NewscatController@show')->name('admin.newscat.show');#详情
+        Route::post('/newscat-update/{id}','Admin\NewscatController@update')->name('admin.newscat.update');#更新
+        Route::post('/newscat-delete/{id}','Admin\NewscatController@delete')->name('admin.newscat.delete');#删除
+        Route::post('/newscat-display/{id}','Admin\NewscatController@display')->name('admin.newscat.display');#隐藏显示
 
 
     });

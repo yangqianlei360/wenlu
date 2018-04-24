@@ -1,8 +1,8 @@
 <?php
 
 return array (
-  '_token' => 'bQ2QJLqb8VVCn7a8wpN0bdTJTQByR6x42jGu1h8b',
-  'webname' => '网站名称',
+  '_token' => 'r44XgMcPHO1VS3xjSHhpFIXOjI0O87vif3rR5ssw',
+  'webname' => '网站名称1',
   'domain' => '网站域名',
   'email' => '站长邮箱',
   'desc' => '统计代码',
